@@ -1,0 +1,198 @@
+
+/* Recolhido do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+/* Recolhido do Google Fonts */
+
+/*'rem' representa o tamanho relativo em relação à fonte
+do elemento raíz, permitindo escalar e tornar reponsívo*/
+
+:root {                         /*':root' é um seletor para definir var e aplicar estilos*/
+
+    --primary-color: #97B0AA;
+    --secondary-color: white;
+    --tertiary-color: black;
+    --hover-color:  #696969;
+    --footer-color: green;
+    --header-color: #EEDC82;
+    --button-color: black;
+
+
+    --primary-font: 'Raleway', sans-serif;
+
+}
+
+* {             /*O "*" é utilizado para definir que todos os elementos
+                da página terão suas margens e preenchimentos zerados*/
+    margin: 0;
+    padding: 0;
+}
+
+a {             /*Define a cor do texto dos links (<a>) como branco*/
+  color: white;
+}
+
+    body {                         /*Propriedades gerais do corpo da página, podendo ser
+                                   alterado posteriormente em estilos sobrepostos ao 'body'*/
+    /*height: 100vh;*/              /*Determina 100% do 'viewport' do dispositivo*/
+    background-color: var(--primary-color);
+    color: var(--secondary-color)  ;  /*Determina a cor dos textos do corpo da página
+                                      de acordo com o ':root'*/
+}
+
+.header {
+    padding: 2% 0% 0% 15%; /*Com 4 valores: superior, direito
+                           inferior, esquerdo*/
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.header-menu-link {
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+.presentation {
+    paddin: 8% 15%; /*Determina a margem externa ao redor dos elementos (b*h)*/
+    flex-direction: column-reverse; /*Define a direção principal dos elementos*/
+    display: flex; /*Define o elemento como flexível,
+                    controlando o posicionamento de cada item*/
+    align-items: baseline; /*Define a posição vertical dos itens*/
+    gap: 92px;            /*Controla o espaçamento entre a imagem e os outros
+                          elementos*/
+}
+
+.presentation-content {
+
+    width: 50%;   /*Define o limite para o conteúdo dessa seção.
+                    Não inclui a imagem pois ela não está
+                    dentro do mesmo elemento*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /*Define o espaçamento entre os elementos de acordo
+                com o Flexbox (flex-direction)*/
+
+}
+
+.presentation-content-title {
+    font-size: 10rem;
+    font-family: var(--primary-font);
+}
+
+.presentation-content-text {
+    font-size: 2.5rem
+}
+
+.presentation-links {
+    display: flex;
+    flex-direction: column; /*Altera a ordem dos elementos para coluna*/
+    justify-content: space-between;
+    align-items: center; /*Centraliza os elementos de acordo
+                          com o Flexbox (flex-direction)*/
+    gap: 32px;
+}
+
+.presentation-links-subtitle {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.navigation-links-presentation {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+
+                                    /*cor fundo, largura, alinhamento de texto,
+                                    arredondamento da borda, tamanho da fonte, peso da fonte,
+                                    espaço entre borda e conteudo, tirar link, cor texto, tipo de fonte*/
+        background-color: var(--button-color);
+        border: 2px solid var(--tertiary-color); /*borda da propriedade. tamanho, tipo, cor*/
+        width: 50%; /*tamanho do botão*/
+        text-align: center;
+        border-radius: 16px;
+        font-size: 1.5rem;
+        font_weight: 600;
+        padding: 21.5px 0;
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-family: var(--primary-font); /*Recolhido do Google Fonts*/
+
+}
+
+.presentation-links-link:hover { /*Muda a cor do botão com o passar do mouse*/
+        background-color: var(--hover-color);
+}
+
+.example-photo { /*Controla o tamanho da foto*/
+  width: 20%;
+  height: auto;  /*acompanha o tamanho da tela*/
+}
+
+
+.footer {                        /*Rodapé da página*/
+        color: black;
+        background-color: var(--footer-color);
+        padding: 24px;
+        text-align: center;
+        font-family: var(--primary-font);
+        font-size: 1.5rem;
+        font-weight 400;
+
+}
+
+@media (max-width: 1200px) { /*media quaries*/ /*usado para controlar em
+                                             outros tamanhos de tela*/
+    .header {
+        padding: 8%
+    }
+
+    .header-menu {
+        justify-content: center;
+    }
+
+    .presentation {
+        flex-direction: column-reverse;
+        padding:
+    }
+
+    presentation-content {
+        width: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*background-color: black;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    font_weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif; Recolhido do Google Fonts */
+
+
+
+
+
